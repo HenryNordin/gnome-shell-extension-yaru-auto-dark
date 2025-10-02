@@ -1,7 +1,8 @@
 {
     "uuid": "yaru-auto-dark@henrynordin",
     "name": "Yaru automatic dark mode",
-    "description": "Automatically switches the Yaru shell theme to the appropriate variant depending on whether dark mode is enabled.",
+    "description": "Automatically switches between light and dark versions of the Yaru shell theme, icon theme, and GTK theme based on whether dark mode is enabled or not. Users must first install and then enable these themes themselves, for example using GNOME Tweaks. \nNote: This extension is not intended for Ubuntu, which already handles automatic Yaru theme switching due to Yaru being its default theme.",
     "shell-version": [ "49" ],
-    "url": "https://github.com/HenryNordin/gnome-shell-extension-yaru-auto-dark"
+    "url": "https://github.com/HenryNordin/gnome-shell-extension-yaru-auto-dark",
+    "version": 3
 }
