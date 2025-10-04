@@ -25,11 +25,11 @@ export default class DarkModeThemeExtension extends Extension {
     }
 
     disable() {
-    // Disconnect signal
-    if (this._interfaceSettings && typeof this._colorSchemeChangedId === 'number') {
-        this._interfaceSettings.disconnect(this._colorSchemeChangedId);
-        this._colorSchemeChangedId = null;
-    }
+        // Disconnect signal
+        if (this._interfaceSettings && this._colorSchemeChangedId) {
+            this._interfaceSettings.disconnect(this._colorSchemeChangedId);
+            this._colorSchemeChangedId = null;
+        }
 
         this._userThemeSettings = null;
         this._interfaceSettings = null;
